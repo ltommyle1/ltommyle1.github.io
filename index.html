@@ -1,79 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Tommy Le</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tommy Le | Salesforce Administrator</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <h2>Tommy Le</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- ================= NAVIGATION ================= -->
 
-    <!-- HERO -->
-    <section id="about">
-        <h1>Hi, I'm Tommy</h1>
-        <p>Salesforce Admin | Aspiring Developer</p>
-        <p>I build automation in Salesforce and I'm learning Java + Web Development.</p>
-        <a href="resume.pdf" target="_blank">Download Resume</a>
-    </section>
+    <header>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h2>Projects</h2>
+        <nav class="navbar">
 
-        <div class="project">
-            <h3>Food Pantry Notification System</h3>
-            <p>Java Swing app using MVC and SQLite to send and track notifications.</p>
-        </div>
+            <h2 class="logo">Tommy Le</h2>
 
-        <div class="project">
-            <h3>Salesforce Automation</h3>
-            <p>Built flows and Apex logic to automate opportunity processes.</p>
-        </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    </section>
+        </nav>
 
-    <section id="skills">
-    <h2>Skills</h2>
+    </header>
 
-    <div class="skills-container">
+    <main>
 
-        <div class="skill-group">
-            <h3>Salesforce</h3>
-            <p>Flows, Apex, Reports & Dashboards, Data Modeling</p>
-        </div>
+        <!-- ================= HERO ================= -->
 
-        <div class="skill-group">
-            <h3>Programming</h3>
-            <p>Java, JavaScript, SQL</p>
-        </div>
+        <section id="about" class="hero">
 
-        <div class="skill-group">
-            <h3>Web Development</h3>
-            <p>HTML, CSS (Learning)</p>
-        </div>
+            <div class="hero-text">
 
-        <div class="skill-group">
-            <h3>Tools</h3>
-            <p>Git, :contentReference[oaicite:0]{index=0}, :contentReference[oaicite:1]{index=1}</p>
-        </div>
+                <p class="intro">Hello, I'm</p>
 
-    </div>
-    </section>
+                <h1>Tommy Le</h1>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: ltommylel@email.com</p>
-    </section>
+                <h2>Salesforce Administrator<br>
+                    Aspiring Software Engineer
+                </h2>
+
+                <p class="description">
+                    I build business solutions using Salesforce while expanding my
+                    software engineering skills through Java, SQL, cloud computing,
+                    and web development.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="resume.pdf" target="_blank" class="btn-secondary">
+                        Download Resume
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="images/profile.jpg"
+                    alt="Tommy Le">
+
+            </div>
+
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects">
+
+            <h2>Featured Projects</h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+
+                    <h3>Food Pantry Notification System</h3>
+
+                    <p>
+                        Java desktop application using MVC architecture,
+                        SQL Server, filtering, sorting, and CSV export.
+                    </p>
+
+                    <span>Java</span>
+                    <span>SQL</span>
+                    <span>MVC</span>
+
+                </div>
+
+                <div class="project-card">
+
+                    <h3>Salesforce Automation</h3>
+
+                    <p>
+                        Automated business processes using Flows,
+                        Apex, Reports, and Data Modeling.
+                    </p>
+
+                    <span>Apex</span>
+                    <span>Flow</span>
+                    <span>Salesforce</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills">
+
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>Programming</h3>
+
+                    <div class="badges">
+                        <span>Java</span>
+                        <span>JavaScript</span>
+                        <span>SQL</span>
+                        <span>Apex</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-card">
+
+                    <h3>Salesforce</h3>
+
+                    <div class="badges">
+                        <span>Flow</span>
+                        <span>Reports</span>
+                        <span>SOQL</span>
+                        <span>Security</span>
+                    </div>
+
+                </div>
+
+                <div class="skill-card">
+
+                    <h3>Tools</h3>
+
+                    <div class="badges">
+                        <span>Git</span>
+                        <span>VS Code</span>
+                        <span>IntelliJ</span>
+                        <span>DBeaver</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section id="education">
+
+            <h2>Education</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <h3>Portland Community College</h3>
+
+                    <p>Associate of Computer Information Systems</p>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <h3>Oregon State University</h3>
+
+                    <p>B.S. Computer Science (Planned)</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact">
+
+            <h2>Let's Connect</h2>
+
+            <p>Email: ltommylel@gmail.com</p>
+
+            <p>LinkedIn | GitHub (Coming Soon)</p>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>© 2026 Tommy Le. Built with HTML & CSS.</p>
+
+    </footer>
 
 </body>
+
 </html>
