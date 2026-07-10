@@ -79,11 +79,6 @@ header{
 
 /* ========== HERO ========== */
 
-
-/* ======================================================
-   HERO
-====================================================== */
-
 .hero{
 
     min-height:85vh;
@@ -509,46 +504,119 @@ footer{
 }
 
 /* responsive */
-@media (max-width:900px){
 
-.hero{
-    flex-direction:column-reverse;
-    text-align:center;
-    gap:3rem;
-    padding-top:2rem;
-}
+@media (max-width: 900px) {
 
-.hero-buttons{
-    justify-content:center;
-    flex-wrap:wrap;
-}
+    .hero{
 
-.description{
-    margin:auto;
-}
+        flex-direction:column;
 
-.navbar{
-    flex-direction:column;
-    gap:1rem;
-}
+        text-align:center;
 
-.nav-links{
-    flex-wrap:wrap;
-    justify-content:center;
-}
+        gap:50px;
 
-h1{
-    font-size:3rem;
-}
+        min-height:auto;
 
-.profile-placeholder{
-    width:200px;
-    height:200px;
-    font-size:3rem;
-}
+        padding-top:40px;
 
-section{
-    padding:70px 0;
-}
+    }
+
+    .hero-text{
+
+        max-width:100%;
+
+    }
+
+    /* Put photo above the text on phones */
+
+    .hero-photo{
+
+        order:-1;
+
+    }
+
+    .profile-placeholder{
+
+        width:180px;
+
+        height:180px;
+
+        font-size:3rem;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:15px;
+
+        margin-bottom:25px;
+
+    }
+
+    .hero-stats{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:15px;
+
+        margin-top:0;
+
+    }
+
+    .hero-stat{
+
+        width:140px;
+
+        height:105px;
+
+    }
+
+    h1{
+
+        font-size:3rem;
+
+    }
+
+    .hero h2{
+
+        font-size:1.35rem;
+
+    }
+
+    .description{
+
+        margin-bottom:30px;
+
+    }
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:1rem;
+
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:1rem;
+
+    }
+
+    section{
+
+        padding:70px 0;
+
+    }
 
 }
